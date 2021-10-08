@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab View Controller-->
+        <scene sceneID="0dC-Qe-bVy">
+            <objects>
+                <viewController storyboardIdentifier="MainTabViewController" id="Ymo-rz-3jN" customClass="MainTabViewController" customModule="MasterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQt-fG-AV8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5nw-cR-vtB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="YZY-Xk-o95">
+                                    <size key="itemSize" width="200" height="260"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ztd-5T-cam"/>
+                        <color key="backgroundColor" name="imperialRed"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5nw-cR-vtB" secondAttribute="bottom" id="3Dx-Pu-b4v"/>
+                            <constraint firstItem="ztd-5T-cam" firstAttribute="trailing" secondItem="5nw-cR-vtB" secondAttribute="trailing" id="N9k-43-amY"/>
+                            <constraint firstItem="5nw-cR-vtB" firstAttribute="top" secondItem="XQt-fG-AV8" secondAttribute="top" id="kQv-d6-L0s"/>
+                            <constraint firstItem="5nw-cR-vtB" firstAttribute="leading" secondItem="ztd-5T-cam" secondAttribute="leading" id="nf9-2e-jT8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="5nw-cR-vtB" id="6JZ-cx-dW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFp-2E-SMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4499" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="imperialRed">
+            <color red="0.84313725490196079" green="0.29803921568627451" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
